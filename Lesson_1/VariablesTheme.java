@@ -40,10 +40,10 @@ public class VariablesTheme {
         short maxShort = 32_767;
         int maxInt = 2_147_483_647;
         long maxLong = 9_223_372_036_854_775_807l;
-        System.out.println("byte: " + maxByte + ", " + (maxByte++) + ", " + (maxByte--));
-        System.out.println("short: " + maxShort + ", " + (maxShort++) + ", " + (maxShort--));
-        System.out.println("int: " + maxInt + ", " + (maxInt++) + ", " + (maxInt--));
-        System.out.println("long: " + maxLong + ", " + (maxLong++) + ", " + (maxLong--));
+        System.out.println("byte: " + maxByte + ", " + (++maxByte) + ", " + (--maxByte));
+        System.out.println("short: " + maxShort + ", " + (++maxShort) + ", " + (--maxShort));
+        System.out.println("int: " + maxInt + ", " + (++maxInt) + ", " + (--maxInt));
+        System.out.println("long: " + maxLong + ", " + (++maxLong) + ", " + (--maxLong));
 
         System.out.println("\n5. Перестановка значений переменных");
         int num1 = 2;
@@ -81,16 +81,16 @@ public class VariablesTheme {
 
         System.out.println("\n7. Вывод в консоль ASCII-арт Дюка");
         char slash = '/';
-        char reverseSlash = '\\';
+        char backslash = '\\';
         char openParenthesis = '(';
         char closingParenthesis = ')';
-        System.out.println("     " + slash + reverseSlash);
-        System.out.println("    " + slash + "  " + reverseSlash);
-        System.out.println("   " + slash + "" + underscore + "" + openParenthesis + " " + 
-                closingParenthesis + "" + reverseSlash);
-        System.out.println("  " + slash + "      " + reverseSlash);
+        System.out.println("     " + slash + backslash);
+        System.out.println("    " + slash + "  " + backslash);
+        System.out.println("   " + slash + underscore + openParenthesis + closingParenthesis + 
+                " " + backslash);
+        System.out.println("  " + slash + "      " + backslash);
         System.out.println(" " + slash + underscore + underscore + underscore + underscore + 
-                slash + reverseSlash + underscore + underscore + reverseSlash);
+                slash + backslash + underscore + underscore + backslash);
 
         System.out.println("\n8. Вывод количества сотен, десятков и единиц числа");
         int srcNum = 123;
@@ -110,7 +110,7 @@ public class VariablesTheme {
         int allSeconds = 86399;
         int hh = allSeconds / 3600;
         int mm = allSeconds % 3600 / 60;
-        int cc = allSeconds % 3600 / 60 % 60;
+        int cc = allSeconds % 60;
         System.out.println(hh + ":" + mm + ":" + cc);
     }
 }
