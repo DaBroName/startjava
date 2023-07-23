@@ -30,8 +30,8 @@ public class VariablesTheme {
         System.out.println("Общая стоимость товаров со скидкой = " + discountPrice);
 
         System.out.println("\n3. Вывод слова JAVA");
-        System.out.println("   " + "J" + "    " + "a" + "  " + "v" + "     " + "v" + "  " + "a");
-        System.out.println("   J   a a  v   v  a a    ");
+        System.out.println("   J    a  v     v  a");
+        System.out.println("   J   a a  v   v  a a");
         System.out.println("J  J  aaaaa  V V  aaaaa");
         System.out.println(" JJ  a     a  V  a     a");
 
@@ -48,13 +48,12 @@ public class VariablesTheme {
         System.out.println("\n5. Перестановка значений переменных");
         int num1 = 2;
         int num2 = 5;
-        int num3;
         System.out.println("Исходные значения переменных: \n" + "Первая переменная = " + num1 + 
                 " , " + "вторая переменная = " + num2);
         System.out.println("Перестановка значений с помощью третьей переменной:");
-        num3 = num1;
+        int tmp = num1;
         num1 = num2;
-        num2 = num3;
+        num2 = tmp;
         System.out.println("Первая переменная = " + num1 + " , " + "вторая переменная = " + num2);
         System.out.println("С помощью арифметических операций:");
         num1 += num2;
@@ -86,8 +85,8 @@ public class VariablesTheme {
         char closingParenthesis = ')';
         System.out.println("     " + slash + backslash);
         System.out.println("    " + slash + "  " + backslash);
-        System.out.println("   " + slash + underscore + openParenthesis + closingParenthesis + 
-                " " + backslash);
+        System.out.println("   " + slash + underscore + openParenthesis + 
+                closingParenthesis + " " + backslash);
         System.out.println("  " + slash + "      " + backslash);
         System.out.println(" " + slash + underscore + underscore + underscore + underscore + 
                 slash + backslash + underscore + underscore + backslash);
