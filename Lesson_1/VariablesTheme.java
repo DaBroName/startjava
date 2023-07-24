@@ -109,7 +109,7 @@ public class VariablesTheme {
         int allSeconds = 86399;
         int hh = allSeconds / 3600;
         int mm = allSeconds % 3600 / 60;
-        int cc = allSeconds % 60;
-        System.out.println(hh + ":" + mm + ":" + cc);
+        int ss = allSeconds % 60;
+        System.out.println(hh + ":" + mm + ":" + ss);
     }
 }
